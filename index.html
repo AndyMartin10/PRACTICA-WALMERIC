@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modal formulario</title>
+  <link rel="stylesheet" href="./css/estilos.css">
+</head>
+<body>
+  <button id="abrir-form">Abrir Formulario</button>
+
+  <div class="modal-container" id="modal-container">
+    <div class="modal">
+      <h2>Login</h2>
+      <form class="form" id="form">
+
+        <div class="form-control">
+          <input class="controles" type="text" name="nombre" id="nombre" placeholder="Nombre" required>
+          <small>Rellene</small>
+        </div>
+
+        <div class="form-control">
+          <input class="controles" type="email" name="email" id="email" placeholder="Email" required>
+          <small>Rellene</small>
+        </div>
+
+        <div class="form-control">
+          <input class="controles" type="tel" name="telefono" id="telefono" placeholder="Teléfono" required>
+          <small>rellene el teléfono correctamente</small>
+        </div>
+  
+        <input class="boton" type="submit" onclick = 'enviarFormulario()' id="btn-enviar" value="Enviar">
+      </form>
+
+      
+      <button id="cerrar">Cerrar</button>
+      <div id="error"></div>
+    </div>
+  </div>
+
+  <script src="./js/app.js"></script>
+</body>
+</html>
